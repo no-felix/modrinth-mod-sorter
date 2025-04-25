@@ -1,0 +1,156 @@
+/* Mod Manager Style Sheet - v1.2 */
+
+/* General styles */
+.root {
+    font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    -fx-font-size: 12px;
+    background-color: #f5f5f5;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Table styles */
+.table-view {
+    background-color: white;
+    -fx-background-color: white;
+    border-color: #ddd;
+    -fx-border-color: #ddd;
+    border-radius: 3px;
+    -fx-border-radius: 3px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.table-view .column-header-background {
+    background-color: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    -fx-background-color: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    padding: 5px 0px 5px 0px;
+    -fx-padding: 5px 0px 5px 0px;
+}
+
+.table-view .column-header, .table-view .filler {
+    background-color: transparent;
+    -fx-background-color: transparent;
+    border-color: transparent #dddddd transparent transparent;
+    -fx-border-color: transparent #dddddd transparent transparent;
+    border-width: 0 1px 0 0;
+    -fx-border-width: 0 1px 0 0;
+    size: 40px;
+    -fx-size: 40px;
+}
+
+.table-view .column-header .label {
+    font-weight: bold;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+    padding: 5px;
+    -fx-padding: 5px;
+}
+
+.table-row-cell {
+    background-color: white;
+    -fx-background-color: white;
+    border-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cell-size: 30px;
+}
+
+.table-row-cell:odd {
+    background-color: #f8f8f8;
+    -fx-background-color: #f8f8f8;
+}
+
+.table-row-cell:hover {
+    background-color: #eaf2fd;
+    -fx-background-color: #eaf2fd;
+}
+
+.table-row-cell:selected {
+    background-color: #0078d7;
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+}
+
+/* Issue rows */
+.issue-row {
+    background-color: #ffeeee;
+    -fx-background-color: #ffeeee;
+}
+
+.issue-row:hover {
+    background-color: #ffdddd;
+    -fx-background-color: #ffdddd;
+}
+
+/* Button styles */
+.action-button {
+    background-color: #0078d7;
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+    font-weight: bold;
+    -fx-font-weight: bold;
+    padding: 8px 16px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 3px;
+}
+
+.action-button:hover {
+    background-color: #0063b1;
+    -fx-background-color: #0063b1;
+}
+
+.action-button:pressed {
+    background-color: #004c8c;
+    -fx-background-color: #004c8c;
+}
+
+/* Progress bar */
+.progress-bar {
+    -fx-accent: #0078d7;
+}
+
+.progress-bar .track {
+    background-color: #e0e0e0;
+    -fx-background-color: #e0e0e0;
+}
+
+/* Status label */
+.status-label {
+    font-style: italic;
+    -fx-font-style: italic;
+    -fx-text-fill: #555;
+}
+
+/* Dialog styling */
+.config-dialog {
+    background-color: white;
+    -fx-background-color: white;
+}
+
+.config-dialog .button-bar {
+    background-color: #f5f5f5;
+    -fx-background-color: #f5f5f5;
+    padding: 10px;
+    -fx-padding: 10px;
+    border-color: #ddd;
+    -fx-border-color: #ddd;
+    border-width: 1px 0 0 0;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.config-dialog .button {
+    background-color: #f0f0f0;
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: black;
+    -fx-background-radius: 3px;
+}
+
+.config-dialog .button:hover {
+    background-color: #e0e0e0;
+    -fx-background-color: #e0e0e0;
+}
+
+.config-dialog .button-bar .button-bar-button {
+    padding: 5px 10px;
+    -fx-padding: 5px 10px;
+}
