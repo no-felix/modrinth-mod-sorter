@@ -9,6 +9,7 @@ import javafx.concurrent.Task;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -51,6 +52,9 @@ public class ModManagerApp extends Application {
         
         // Setup main stage
         primaryStage.setTitle(APP_TITLE);
+        primaryStage.getIcons().add(
+                new Image(getClass().getResourceAsStream("/icon/icon.png"))
+        );
         
         // Create components
         tableView = createTableView();
